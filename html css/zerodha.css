@@ -1,0 +1,128 @@
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    box-shadow: 8px 2px 5px #0e0e0e1a;
+    background-color: white;
+    position: fixed;
+    height: 37px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.zerodha{
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    width: 129px;
+    height: 18px;
+    margin-left:  260px ;
+    cursor: pointer;
+    align-items: center;
+   
+}
+.sides{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 15px;
+    font-family: arial, serif;
+    color: grey;
+    cursor: pointer;
+    padding-left: 100px;
+    margin-right: 
+    
+}
+.sid{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0px;
+    align-items: center;
+  
+}
+
+.memu{
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 1px;
+    margin-right: 265px;
+   
+    
+}
+.body{
+    margin-top: 170px;
+    text-align: center;
+   
+    
+}
+.charges{
+    color:#424242 ;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    font-weight: 540;
+    margin-bottom: 0px;
+    line-height: 1;
+    margin-right: 10px;
+    font-size: 46px;
+}
+.list{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 150px;
+    color: #9b9b9b;
+    font-family:Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 50px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    width: 300px;
+    
+}
+.zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin-left: 35px;
+}
+.free{
+    
+    font-weight: 500;
+    width: 500px;
+    font-size: 28px;
+    color: #424242;
+    font-family:Arial, sans-serif;
+    margin-left: 15px;
+}
+.des{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family:Arial, sans-serif;
+    width: 330px;
+    text-indent: 0;
+    
+}
+.twenty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin-left: 30px;
+}
+
