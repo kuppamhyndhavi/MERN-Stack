@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+  <input onkeyup="updateText()" class="textbox">
+  <p class="display"></p>
+  <script>
+    function updateText() {
+      const inputElement=document.querySelector('.textbox');
+      const displayElement=document.querySelector('.display');
+      displayElement.innerHTML=inputElement.value;
+    }
+  </script>
+</body>
+</html>
