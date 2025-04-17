@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var longestPalindrome = function (s) {
+        const n = s.length;
+        if (n === 0) return "";
+
+        let start = 0,
+          maxLen = 1;
+
+        for (let i = 0; i < n; i++) {
+          let p1 = i,
+            p2 = i;
+
+          while (p1 >= 0 && p2 < n && s[p1] === s[p2]) {
+            if (p2 - p1 + 1 > maxLen) {
+              start = p1;
+              maxLen = p2 - p1 + 1;
+            }
+            p1--;
+            p2++;
+          }
+          p1 = i;
+          p2 = i + 1;
+          while (p1 >= 0 && p2 < n && s[p1] === s[p2]) {
+            if (p2 - p1 + 1 > maxLen) {
+              start = p1;
+              maxLen = p2 - p1 + 1;
+            }
+            p1--;
+            p2++;
+          }
+        }
+        console.log(s.substring(start, start + maxLen));
+      };
+      longestPalindrome("babad");  
+      longestPalindrome("cbbd");  
+    </script>
+  </body>
+</html>
