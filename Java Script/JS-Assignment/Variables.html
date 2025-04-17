@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Variable Scope in JavaScript</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { color: #92039f; }
+    pre { background: #f0f0f0; padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>Variable Scope in JavaScript</h1>
+  <p><strong>Scope</strong> defines where variables are accessible.</p>
+
+  <h2>Global Scope</h2>
+  <pre><code>let globalVar = "Global";
+function showGlobal() {
+  console.log(globalVar);
+}
+showGlobal();
+console.log(globalVar);
+  </code></pre>
+
+  <h2>Local (Function) Scope</h2>
+  <pre><code>function localExample() {
+  let localVar = "Local";
+  console.log(localVar);
+}
+localExample();
+  </code></pre>
+
+  <h2>Block Scope</h2>
+  <pre><code>{
+  let blockVar = "Block";
+  console.log(blockVar);
+}
+  </code></pre>
+
+  <h2>Variable Shadowing</h2>
+  <pre><code>let name = "Outer";
+function shadowExample() {
+  let name = "Inner";
+  console.log(name);
+}
+shadowExample();
+console.log(name);
+  </code></pre>
+
+  <h2>Summary</h2>
+  <ul>
+    <li><strong>Global:</strong> Declared outside all functions.</li>
+    <li><strong>Local:</strong> Declared inside a function.</li>
+    <li><strong>Block:</strong> Declared inside { } using let/const.</li>
+  </ul>
+
+  <script>
+    let globalVar = "Global";
+    function showGlobal() { console.log(globalVar); }
+    showGlobal();
+    console.log(globalVar);
+
+    function localExample() {
+      let localVar = "Local";
+      console.log(localVar);
+    }
+    localExample();
+
+    { let blockVar = "Block"; console.log(blockVar); }
+
+    let name = "Outer";
+    function shadowExample() {
+      let name = "Inner";
+      console.log(name);
+    }
+    shadowExample();
+    console.log(name);
+  </script>
+
+</body>
+</html>
