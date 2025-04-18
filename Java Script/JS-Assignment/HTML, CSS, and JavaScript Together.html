@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #8fa2b5;
+    }
+
+    .counter {
+      font-size: 48px;
+      margin: 20px 0;
+      color: #2b2929;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    #increment {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #decrement {
+      background-color: #f44336;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Counter</h1>
+  <div class="counter" id="count">0</div>
+  <button id="increment">Increment</button>
+  <button id="decrement">Decrement</button>
+
+  <script>
+    let counter = 0;
+
+    const countDisplay = document.getElementById("count");
+    const incBtn = document.getElementById("increment");
+    const decBtn = document.getElementById("decrement");
+
+    incBtn.onclick = () => {
+      counter++;
+      countDisplay.textContent = counter;
+    };
+
+    decBtn.onclick = () => {
+      if (counter > 0) {
+        counter--;
+        countDisplay.textContent = counter;
+      }
+    };
+  </script>
+
+</body>
+</html>
