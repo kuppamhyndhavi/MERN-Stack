@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      function processTransactions(transactions) {
+  let finalBalance = 0;
+  let totalDeposits = 0;
+  let totalWithdrawals = 0;
+
+  for (let tx of transactions) {
+    if (tx.type === 'deposit') {
+      finalBalance += tx.amount;
+      totalDeposits += tx.amount;
+    } else if (tx.type === 'withdrawal') {
+      finalBalance -= tx.amount;
+      totalWithdrawals += tx.amount;
+    }
+  }
+
+  return {
+    finalBalance,
+    totalDeposits,
+    totalWithdrawals
+  };
+}
+
+// Example usage
+const transactions = [
+  { type: 'deposit', amount: 100 },
+  { type: 'withdrawal', amount: 40 },
+  { type: 'deposit', amount: 60 }
+];
+
+const result = processTransactions(transactions);
+console.log(result);
+
+  </script>
+</body>
+</html>
