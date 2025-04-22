@@ -1,0 +1,45 @@
+body{
+      background-color: black;
+      color: white;
+      font-family: Arial;
+    }
+    .calculation {
+        color: white;
+        font-size: 45px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .calculator-button {
+        height: 60px;
+        width: 60px;
+        border-radius: 60px;
+        border: none;
+        font-size: 26px;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    button{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      color: white;
+      background-color: rgb(51, 51, 51);
+      border: none;
+      cursor: pointer;
+      margin-right: 5px;
+      font-size: 25px;
+    }
+    .yellow{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      color: white;
+      background-color: rgb(254, 160, 10);
+      border: none;
+      cursor: pointer;
+      margin-right: 5px;
+      font-size: 25px;
+    }
+    .clear{
+      font-size: 17px;
+    }
